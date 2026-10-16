@@ -1,9 +1,7 @@
 nom=input("Hola, cual es tu nombre?")
-print("Hola",nom)
-
-num=1
-print(num)
-num=2,5
-print(num)
-num="ups"
-print(num)
+edad=input("en quin any vas neixer?")
+ara=2026
+edad=int(edad)
+edat= ara - edad
+print("Hola",nom, "tens",edat,"anys") 
+print("HOLA MUNDO")
