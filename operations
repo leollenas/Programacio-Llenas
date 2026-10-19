@@ -1,1 +1,23 @@
+#prograa que demana 2 numeros y faci totes les operacions possibles.
+num1= int(input("Donam el primer numero:"))
+num2= int(input("Donam el segon numero:"))
+suma= num1 + num2
+resta1= num1 - num2
+resta2= num2 - num1 
+multi= num1 * num2
+potencia= num1**num2
+divisio1= num1 / num2
+divisio1_res= num1//num2 
+divisio2= num2/num1
+divisio2_res= num2//num1
+print("La suma es:", suma)
+print("La resta es:",resta1, "o" ,resta2)
+print("La multiplicació es:", multi)
+print("La potencia es:",potencia)
+print("La divisio es:", divisio1_res,"amb residu",divisio1,"L'altre combinacio", divisio2_res,"amb residu",divisio2)
+
+
+
+
+
 
