@@ -1,1 +1,11 @@
-if 
+num1= int(input("Donam el primer numero:"))
+num2= int(input("Donam el segon numero:"))
+suma=num1+num2
+if suma>10:
+    print("La teva suma es mes gran que 10")
+else:
+    print("La teva suma es mes petita que 10")
+if suma>8 or suma<4:
+    print("La teva suma es mes gran que 8 o es petita que 4")
+else:
+    print("La teva suma es mes petita que 8 o mes gran que 4")
