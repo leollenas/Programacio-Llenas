@@ -15,6 +15,7 @@ print("La resta es:",resta1, "o" ,resta2)
 print("La multiplicació es:", multi)
 print("La potencia es:",potencia)
 print("La divisio es:", divisio1_res,"amb residu",divisio1,"L'altre combinacio", divisio2_res,"amb residu",divisio2)
+
 #intercanvi de variables
 print("El primer numero es ",num1)
 print("El segon numero es ",num2)
@@ -23,8 +24,8 @@ num1=num2
 num2=aux
 print("Ara el primer numero es ",num1)
 print("Ara el segon numero es ",num2)
-#textos
 
+#textos
 t1= input("Escriu un text:")
 t2= input("Escriu un altre text:")
 
