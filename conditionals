@@ -2,16 +2,30 @@ num1= int(input("Donam el primer numero:"))
 num2= int(input("Donam el segon numero:"))
 suma=num1+num2
 
-#if suma>10:
-   # print("La teva suma es mes gran que 10")
-#else:
-   # print("La teva suma es mes petita que 10")
-#if suma>8 or suma<4:
-  #  print("La teva suma es mes gran que 8 o es petita que 4")
-#else:
- #   print("La teva suma es mes petita que 8 o mes gran que 4")
-
-if suma>14 and suma<18:
-    ("La teva suma es mes gran que 14 i mes petita que 18")
+#mayor que 10
+if suma>10:
+   print("La teva suma es mes gran que 10")
 else:
-    ("La teva suma es mes petita que 14 o mes gran que 18")
+   print("La teva suma es mes petita que 10")
+
+#mayor 8 o pequeño 4
+if suma>8 or suma<4:
+   print("La teva suma es mes gran que 8 o es petita que 4")
+else:
+   print("La teva suma es mes petita que 8 o mes gran que 4")
+
+#entre 12 y 18
+if suma>12 and suma<18 :
+    print("La teva suma es mes gran que 12 i mes petita que 18")
+else:
+    print("La teva suma es mes petita que 12 o mes gran que 18")
+
+#suma 13 o 15
+if suma==13:
+   print("La suma dona 13")
+elif suma==15:
+   print("La teva suma dona 15")
+else: 
+   print("La teva suma no dona ni 15 ni 13")
+#if not suma==13:
+ #  print("La teva suma NO dona 13")
