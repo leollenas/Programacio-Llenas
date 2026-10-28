@@ -4,30 +4,67 @@ fer=input("Que vols fer amb ells? \n sumar - restar - multiplicar - dividir - el
 if fer=="sumar":
     suma=num1+num2
     print("La suma dona",suma)
+
 elif fer=="restar":
     resta=num1-num2
     resta2=num2-num1 
-    opciorest=print("Quina resta vols? \n num1-num2 , num2-num1 o lesdues \n escull una d'aquestes opcions:")
-    if opciorest=="num1-num2":
+    opciorest=print("Quina resta vols? \n" ,num1,"-",num2 ,"o", num2,"-",num1 ,"o" , "lesdues"" \n escull una d'aquestes opcions(1,2,3):")
+    
+    if opciorest=="1":
         print("La teva resta es", resta)
-    elif opciorest=="num2-num1":
+    elif opciorest=="2":
         print("La teva resta es", resta2)
-    elif opciorest=="lesdues":
+    elif opciorest=="3":
         print("Les teves restes son" , resta ,"i", resta2)
+
 elif fer=="multiplicar":
     multi=num1*num2
     print("La teva multiplicacio dona", multi)
+
 elif fer=="dividir":
-    diviso=num1/num2
-    print("La teva divisio dona",divisio)
+    diviso2=num2/num1
+    opciodiv=print("Quina divisio vols? \n ",num1,"/",num2 ,"o", num2,"/",num1 ,"o", "lesdues" "\n escull una d'aquestes opcions(1,2,3):")
+   
+    if opciodiv=="1":
+        print("La teva divisio es", num1/num2)
+    elif opciodiv=="2":
+        print("La teva divisio es", diviso2)
+    elif opciodiv=="3":
+        print("Les teves divisions son" , diviso ,"i", diviso2)
+    
 elif fer=="divisioentera":
     divisioentera=num1//num2
-    print("La teva divisio entera dona", divisioentera)
+    divisioentera2=num2//num1
+    opciodivent=print("Quina divisio entera vols? \n "num1,"//",num2 ,,"o", num2,"//",num1 ,"o", "lesdues"," \n escull una d'aquestes opcions(1,2,3):")
+   
+    if opciodivent=="1":
+        print("La teva divisio entera es", diviso)
+    elif opciodivent=="2":
+        print("La teva divisio entera es", diviso2)
+    elif opciodivent=="3":
+        print("Les teves divisions enteres son" , divisioentera ,"i", divisoentera2)    
 elif fer=="elevar":
     elevar=num1**num2
-    print("El teu numero elevat dona", elevar)
+    elevar2=num2**num1
+    opcioelev=print("Quina elevacio vols? \n", num1,"**",num2 ,"o", num2,"**",num1 ,"o", "lesdues"," \n escull una d'aquestes opcions(1,2,3):")
+   
+    if opcioelev=="1":
+        print("La teva elevacio es", elevar)
+    elif opcioelev=="2":
+        print("La teva elevacio es", elevar2)
+    elif opcioelev=="3":
+        print("Les teves elevacions son" , elevar ,"i", elevar2) 
+
 elif fer=="modul":
     modul=num1%num2
-    print("El modul dels teus numeros es", modul)
+    modul2=num2%num1
+    opciomod=print("Quin modul vols? \n", num1,"**",num2 , num2,"**",num1 ,"o" ,"lesdues" "\n escull una d'aquestes opcions(1,2,3):")
+   
+    if opciomod=="1":
+        print("El teu modul es", modul)
+    elif opciomod=="2":
+        print("El teu modul es", modul2)
+    elif opciomod=="3":
+        print("Els teus moduls son" , modul ,"i", modul2) 
 else:
     print("ERROR: \n Has d'escriure una de les opcions!")
