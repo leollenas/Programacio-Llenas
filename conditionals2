@@ -7,14 +7,20 @@ if fer=="sumar":
 elif fer=="restar":
     resta=num1-num2
     resta2=num2-num1 
-    print("Las teves posibles restes donen",resta,"i",resta2)
+    opciorest=print("Quina resta vols? \n num1-num2 , num2-num1 o lesdues \n escull una d'aquestes opcions:")
+    if opciorest=="num1-num2":
+        print("La teva resta es", resta)
+    elif opciorest=="num2-num1":
+        print("La teva resta es", resta2)
+    elif opciorest=="lesdues":
+        print("Les teves restes son" , resta ,"i", resta2)
 elif fer=="multiplicar":
     multi=num1*num2
     print("La teva multiplicacio dona", multi)
 elif fer=="dividir":
     diviso=num1/num2
     print("La teva divisio dona",divisio)
-elif fer=="divisoentera":
+elif fer=="divisioentera":
     divisioentera=num1//num2
     print("La teva divisio entera dona", divisioentera)
 elif fer=="elevar":
