@@ -1,1 +1,27 @@
-
+num1=int(input("Donam un numero:"))
+num2=int(input("Donam un altre:"))
+fer=input("Que vols fer amb ells? \n sumar - restar - multiplicar - dividir - elevar - modul - divisioentera \n Escull una d'aquestes opcions:")
+if fer=="sumar":
+    suma=num1+num2
+    print("La suma dona",suma)
+elif fer=="restar":
+    resta=num1-num2
+    resta2=num2-num1 
+    print("Las teves posibles restes donen",resta,"i",resta2)
+elif fer=="multiplicar":
+    multi=num1*num2
+    print("La teva multiplicacio dona", multi)
+elif fer=="dividir":
+    diviso=num1/num2
+    print("La teva divisio dona",divisio)
+elif fer=="divisoentera":
+    divisioentera=num1//num2
+    print("La teva divisio entera dona", divisioentera)
+elif fer=="elevar":
+    elevar=num1**num2
+    print("El teu numero elevat dona", elevar)
+elif fer=="modul":
+    modul=num1%num2
+    print("El modul dels teus numeros es", modul)
+else:
+    print("ERROR: \n Has d'escriure una de les opcions!")
