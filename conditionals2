@@ -67,21 +67,23 @@ elif fer=="divisioentera":
             print("Les teves divisions enteres son" , divisioentera ,"i", divisoentera2)    
 
 elif fer=="elevar":
-    if (num1 == 0 and num2 < 0) or (num2 == 0 and num1 < 0):
-        print("ERROR: No se puede elevar 0 a un numero negativo!")
+    elevar=num1**num2
+    elevar2=num2**num1
+    print("Quina elevacio vols? \n", num1,"**",num2 ,"o", num2,"**",num1 ,"o", "lesdues"," \n escull una d'aquestes opcions(1,2,3):")
+    opcioelev=input()
 
-    else:    
-        elevar=num1**num2
-        elevar2=num2**num1
-        print("Quina elevacio vols? \n", num1,"**",num2 ,"o", num2,"**",num1 ,"o", "lesdues"," \n escull una d'aquestes opcions(1,2,3):")
-        opcioelev=input()
-
-        if opcioelev=="1":
+    if opcioelev=="1":
+        if (num1 == 0 and num2 < 0):
+            print("ERROR: No se puede elevar 0 a un número negativo.")
+        else:    
             print("La teva elevacio es", elevar)
-        elif opcioelev=="2":
+    elif opcioelev=="2":
+        if (num2 == 0 and num1 < 0):
+            print("ERROR: No se puede elevar 0 a un número negativo.")
+        else:
             print("La teva elevacio es", elevar2)
-        elif opcioelev=="3":
-            print("Les teves elevacions son" , elevar ,"i", elevar2) 
+    elif opcioelev=="3":
+        print("Les teves elevacions son" , elevar ,"i", elevar2) 
 
 elif fer=="modul":
     modul=num1%num2
