@@ -23,49 +23,72 @@ elif fer=="multiplicar":
     print("La teva multiplicacio dona", multi)
 
 elif fer=="dividir":
-    diviso2=num2/num1
     print("Quina divisio vols? \n ",num1,"/",num2 ,"o", num2,"/",num1 ,"o", "lesdues" "\n escull una d'aquestes opcions(1,2,3):")
     opciodiv=input()
 
     if opciodiv=="1":
-        print("La teva divisio es", num1/num2)
+        if num2==0:
+            print("ERROR:No se puede dividir entre 0!")
+        else:    
+            divisio=num1/num2
+            print("La teva divisio es", divisio)
+
     elif opciodiv=="2":
-        print("La teva divisio es", diviso2)
+        if num1==0:
+            print("ERROR:No se puede dividir entre 0!")
+        else:
+            print("La teva divisio es", diviso2)
     elif opciodiv=="3":
+        diviso2=num2/num1
         print("Les teves divisions son" , diviso ,"i", diviso2)
     
 elif fer=="divisioentera":
-    divisioentera=num1//num2
-    divisioentera2=num2//num1
     print("Quina divisio entera vols? \n ",num1,"//",num2 ,"o", num2,"//",num1 ,"o", "lesdues"," \n escull una d'aquestes opcions(1,2,3):")
     opciodivent=input()
 
     if opciodivent=="1":
-        print("La teva divisio entera es", diviso)
+        if num2==0:
+            print("ERROR: No se puede dividir entre 0!")
+        else:    
+            divisioentera=num1//num2
+            print("La teva divisio entera es", diviso)
     elif opciodivent=="2":
-        print("La teva divisio entera es", diviso2)
+        if num1==0:
+            print("ERROR: No se puede dividir entre 0!")
+        else:    
+            divisioentera2=num2//num1
+            print("La teva divisio entera es", diviso2)
     elif opciodivent=="3":
-        print("Les teves divisions enteres son" , divisioentera ,"i", divisoentera2)    
+        if num1 or num2 == 0:
+            print("EROOR: No se puede dividir entre 0!")
+        else:    
+            divisioentera=num1//num2
+            divisioentera2=num2//num1
+            print("Les teves divisions enteres son" , divisioentera ,"i", divisoentera2)    
 
 elif fer=="elevar":
-    elevar=num1**num2
-    elevar2=num2**num1
-    print("Quina elevacio vols? \n", num1,"**",num2 ,"o", num2,"**",num1 ,"o", "lesdues"," \n escull una d'aquestes opcions(1,2,3):")
-    opcioelev=input()
+    if (num1 == 0 and num2 < 0) or (num2 == 0 and num1 < 0):
+        print("ERROR: No se puede elevar 0 a un numero negativo!")
 
-    if opcioelev=="1":
-        print("La teva elevacio es", elevar)
-    elif opcioelev=="2":
-        print("La teva elevacio es", elevar2)
-    elif opcioelev=="3":
-        print("Les teves elevacions son" , elevar ,"i", elevar2) 
+    else:    
+        elevar=num1**num2
+        elevar2=num2**num1
+        print("Quina elevacio vols? \n", num1,"**",num2 ,"o", num2,"**",num1 ,"o", "lesdues"," \n escull una d'aquestes opcions(1,2,3):")
+        opcioelev=input()
+
+        if opcioelev=="1":
+            print("La teva elevacio es", elevar)
+        elif opcioelev=="2":
+            print("La teva elevacio es", elevar2)
+        elif opcioelev=="3":
+            print("Les teves elevacions son" , elevar ,"i", elevar2) 
 
 elif fer=="modul":
     modul=num1%num2
     modul2=num2%num1
     print("Quin modul vols? \n", num1,"**",num2 , num2,"**",num1 ,"o" ,"lesdues" "\n escull una d'aquestes opcions(1,2,3):")
     opciomod=input()
-    
+
     if opciomod=="1":
         print("El teu modul es", modul)
     elif opciomod=="2":
