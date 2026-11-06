@@ -32,7 +32,7 @@ print(lista[2])
 
 #dni
 res=["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"]
-dni=input("Donam el teu DNI:")
+dni=input("Donam el teu DNI sense espais:")
 listdn=list(dni)
 if len(dni)==9:
     num = int(dni[0:8])
@@ -43,7 +43,6 @@ if len(dni)==9:
         print("El teu dni es correcte.")
         print(num,"-",letracorrect)
     elif letracorrect != let:
-        print("El teu DNI es incorrecte, el correcte es:",num,"-",letracorrect)
+        print("El teu DNI es incorrecte, el correcte es:",str(num),"-",letracorrect)
 else:        
     print("Revisa que hagis escrit be el dni.")
-    
