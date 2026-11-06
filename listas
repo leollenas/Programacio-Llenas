@@ -29,3 +29,21 @@ print(lista[2])
 #en blanco
 lista[2]=""
 print(lista[2])
+
+#dni
+res=["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"]
+dni=input("Donam el teu DNI:")
+listdn=list(dni)
+if len(dni)==9:
+    num = int(dni[0:8])
+    let=listdn[8]
+    residu=num%23
+    letracorrect=res[residu]
+    if letracorrect==let:
+        print("El teu dni es correcte.")
+        print(num,"-",letracorrect)
+    elif letracorrect != let:
+        print("El teu DNI es incorrecte, el correcte es:",num,"-",letracorrect)
+else:        
+    print("Revisa que hagis escrit be el dni.")
+    
