@@ -46,3 +46,20 @@ if len(dni)==9:
         print("El teu DNI es incorrecte, el correcte es:",str(num),"-",letracorrect)
 else:        
     print("Revisa que hagis escrit be el dni.")
+
+
+print("La llista es:",lista)
+lista.append("gat")
+print(lista)
+
+lista.insert(1,"gos")
+print(lista)
+
+lista2=[]
+num1=int(input("Donam un numero:"))
+num2=int(input("Donam un numero:"))
+num3=int(input("Donam un numero:"))
+num4=int(input("Donam un numero:"))
+
+lista2.append(num1,num2,num3,num4)
+

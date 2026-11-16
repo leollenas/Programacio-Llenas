@@ -1,1 +1,33 @@
+numeros=[]
 
+num=int(input("Introdueix el primer número: "))
+numeros.append(num)
+
+num=int(input("Introdueix el segon número: "))
+if num<numeros[0]:
+    numeros.insert(0,num)
+else:
+    numeros.append(num)
+
+num=int(input("Introdueix el tercer número: "))
+if num<numeros[0]:
+    numeros.insert(0,num)
+else:
+    if num<numeros[1]:
+        numeros.insert(1,num)
+    else:
+        numeros.append(num)
+
+num=int(input("Introdueix el quart número: "))
+if num<numeros[0]:
+    numeros.insert(0,num)
+else:
+    if num<numeros[1]:
+        numeros.insert(1,num)
+    else:
+        if num<numeros[2]:
+            numeros.insert(2,num)
+        else:
+            numeros.append(num)
+
+print("Els números ordenats són:", numeros)

@@ -1,1 +1,54 @@
+noms=[]
+
+for i in range(3):
+    nom = input("Afegeix un nom: ")
+    noms.append(nom)
+
+print("Els noms introduïts són:", noms)
+
+for nom in noms:
+    print(nom)
+
+paraula=noms[1]
+
+a=0
+
+for lletra in paraula:
+    if lletra == 'a':
+        a += 1
+
+print("La paraula", paraula, "té", a, "lletres 'a'.")
+
+for i in range(17,100):
+    if(i % 2 == 0):
+        print(i, end=" ")
+
+
+
+
+
+
+
+
+compt=0
+for i in noms[0]:
+    if(i=="a"):
+        compt+=1
+print("El primer nom de la llista es", noms[0],"i te",compt,"caracters a")
+
+nores = [[6,6,7,10,9],[10,7,6,7,7],[5,5,10,7,10]]
+compt=0
+for i in notes:
+    for j in i:
+        if(j==10):
+            compt+=1
+print("Hi ha ",compt,"deus a la classe.")
+
+if (compt>0):
+    print("Estan asseguts:")
+    for i in range(3):
+        for j in range(5):
+            if(notes[i][j]==10):
+                print("En la fila",i,"columna",j)
+print("")
 
